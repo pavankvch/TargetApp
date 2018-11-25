@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_delivery_address_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/view" style="@style/topViewStyle"/>
+    <LinearLayout android:id="@+id/lin_steps" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view">
+        <include android:id="@+id/layout_steps" layout="@layout/layout_export_steps"/>
+    </LinearLayout>
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/lin_skip_back" android:layout_below="@+id/lin_steps">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/black" android:text="@string/receiver_data" android:textAlignment="center" app:fontPath="@string/bold_font" style="@style/AddressEditTextStyle"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lin_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp">
+                <RelativeLayout android:id="@+id/rel_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tILArea" android:paddingTop="16dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" android:layout_toStartOf="@+id/img_right_arrow" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                        <TextView android:id="@+id/textArea" android:hint="@string/area_star" style="@style/AddressEditTextStyle"/>
+                    </android.support.design.widget.TextInputLayout>
+                    <ImageView android:id="@+id/img_right_arrow" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/right_arrow" android:tint="@color/hint_grey" android:layout_centerVertical="true" android:rotation="@integer/rotation" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIPhone" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtPhone" android:tag="binding_2" android:hint="@string/phone" android:maxLength="15" android:inputType="phone" android:imeOptions="actionNext" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColor="@color/black" android:textColorHint="@color/hint_grey" android:id="@+id/tIAddressName" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtAddressName" android:tag="binding_3" android:hint="@string/address_name" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIBlock" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtBlock" android:tag="binding_4" android:hint="@string/block" android:inputType="text" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIStreetNumber" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtStreetNumber" android:tag="binding_5" android:hint="@string/street" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIHouse" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtHouse" android:tag="binding_6" android:hint="@string/house" android:inputType="text" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIApartment" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtApartment" android:tag="binding_7" android:hint="@string/apartment" android:inputType="text" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIFloor" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtFloor" android:tag="binding_8" android:hint="@string/floor" android:inputType="number" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIJadda" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtJadda" android:tag="binding_9" android:hint="@string/jadda" android:inputType="text" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIPickupInstructions" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <EditText android:id="@+id/edtPickupInstructions" android:tag="binding_10" android:hint="@string/pickup_instructions" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <View style="@style/edtViewStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/lin_skip_back" android:background="@color/colorRed" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_alignParentBottom="true" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <LinearLayout android:id="@+id/lin_back" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" app:srcCompat="@drawable/ic_back"/>
+            <TextView android:id="@+id/btn_back" android:layout_width="wrap_content" android:text="@string/back" android:textAlignment="viewStart" style="@style/buttonStyle"/>
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_margin="12dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/lin_skip" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <TextView android:id="@+id/btn_skip" android:layout_width="wrap_content" android:text="@string/next" android:textAlignment="viewEnd" style="@style/buttonStyle"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_skip_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_skip"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

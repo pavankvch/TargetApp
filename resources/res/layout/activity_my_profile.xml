@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_my_profile_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/view_color" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp" android:fillViewport="true" android:layout_above="@+id/btn_update_profile" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIFullName" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                <EditText android:id="@+id/edtFullName" android:hint="@string/full_name" android:inputType="text" android:imeOptions="actionNext" style="@style/AddressEditTextStyle"/>
+            </android.support.design.widget.TextInputLayout>
+            <View style="@style/edtViewStyle"/>
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIEmailAddress" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                <EditText android:id="@+id/edtEmailAddress" android:hint="@string/email_address" android:inputType="textEmailAddress" android:imeOptions="actionNext" style="@style/AddressEditTextStyle"/>
+            </android.support.design.widget.TextInputLayout>
+            <View style="@style/edtViewStyle"/>
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_grey" android:id="@+id/tIMobileNo" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                <EditText android:id="@+id/edtMobileNo" android:hint="@string/mobile_number" android:maxLength="10" android:inputType="phone" android:imeOptions="actionNext" style="@style/AddressEditTextStyle"/>
+            </android.support.design.widget.TextInputLayout>
+            <View style="@style/edtViewStyle"/>
+            <RelativeLayout android:id="@+id/rel_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/hint_color" android:id="@+id/tILArea" android:paddingTop="16dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" android:layout_toStartOf="@+id/img_right_arrow" app:hintTextAppearance="@style/TextAppearance.AppCompat">
+                    <TextView android:id="@+id/textArea" android:hint="@string/area" android:layout_toStartOf="@+id/img_right_arrow" style="@style/AddressEditTextStyle"/>
+                </android.support.design.widget.TextInputLayout>
+                <ImageView android:id="@+id/img_right_arrow" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/right_arrow" android:tint="@color/hint_grey" android:layout_centerVertical="true" android:rotation="@integer/rotation" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View style="@style/edtViewStyle"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:gravity="center_horizontal" android:id="@+id/btn_update_profile" android:background="@color/colorRed" android:layout_width="match_parent" android:text="@string/update_profile" android:layout_alignParentBottom="true" style="@style/buttonStyle"/>
+</RelativeLayout>

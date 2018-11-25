@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/weekTitlePaddingBottom" android:paddingBottom="@dimen/weekTitlePaddingTop" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="7">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek1" android:text="SUN" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek2" android:text="MON" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek4" android:text="WED" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek3" android:text="TUE" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek5" android:text="THU" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek6" android:text="FRI" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:tag="dayOfWeek7" android:text="SAT" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek"/>
+    </RelativeLayout>
+</LinearLayout>

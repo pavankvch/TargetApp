@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/dialog_simple_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_dode" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="16dp" android:src="@drawable/ic_success" android:contentDescription="@null"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/btn_color" android:gravity="center" android:id="@+id/tvMsg" android:tag="binding_1" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="64dp"/>
+        <View android:background="@color/hint_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/btnOk" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ok" android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

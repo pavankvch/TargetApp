@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawerLayout" android:tag="layout/activity_base_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar android:id="@+id/mToolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/ToolbarTitle" app:titleTextColor="@color/black">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/toolbar_title" android:visibility="visible" android:layout_width="wrap_content" android:scrollHorizontally="true" android:textAllCaps="true" style="@style/TextStyle"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/img_header" android:visibility="gone" android:layout_width="80dp" android:layout_height="32dp" android:src="@drawable/logo"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_add_address" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_add_address" android:layout_marginEnd="16dp"/>
+        </android.support.v7.widget.Toolbar>
+        <kuwait.com.targetlogistics.MaterialSearchView android:id="@+id/mSearchView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/MaterialSearchViewStyle"/>
+        <FrameLayout android:id="@+id/frmContainer" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/mToolbar"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@+id/drawerListLayout" android:background="@drawable/splash_bg" android:layout_width="300dp" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="52dp" android:src="@drawable/logo"/>
+        <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView android:scrollbarThumbVertical="@android:color/transparent" android:id="@+id/drawerRecycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:overScrollMode="never"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40sdp" android:weightSum="2">
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_whatsapp" android:contentDescription="@null"/>
+                        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/txt_whatsapp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/whatsapp"/>
+                        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/txt_whatsapp_no" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontPath="@string/bold_font"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:gravity="center" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_hotline" android:contentDescription="@null"/>
+                        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/txt_call" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hotline"/>
+                        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/txt_hotline_no" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontPath="@string/bold_font"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

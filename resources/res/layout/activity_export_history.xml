@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_export_history_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view" android:background="@color/view_color" android:layout_width="match_parent" android:layout_height="6dp"/>
+    <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/view">
+        <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/white" app:tabGravity="0" app:tabIndicatorColor="@color/colorPrimaryDark" app:tabIndicatorHeight="4dp" app:tabMode="1" app:tabTextColor="@color/black"/>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

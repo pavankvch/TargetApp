@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_export_parcel_info_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/view" style="@style/topViewStyle"/>
+    <LinearLayout android:id="@+id/lin_steps" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view">
+        <include android:id="@+id/layout_steps" layout="@layout/layout_export_steps"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rec_parcel_info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/lin_skip_back" android:layout_below="@+id/lin_steps" android:overScrollMode="never"/>
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/lin_skip_back" android:layout_below="@+id/lin_steps">
+        <LinearLayout android:orientation="vertical" android:id="@+id/lin_main" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lin_parcel_info_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/lin_skip_back" android:background="@color/colorRed" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_alignParentBottom="true" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <LinearLayout android:id="@+id/lin_back" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" app:srcCompat="@drawable/ic_back"/>
+            <TextView android:id="@+id/btn_back" android:layout_width="wrap_content" android:text="@string/back" android:textAlignment="viewStart" style="@style/buttonStyle"/>
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_margin="12dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/lin_skip" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <TextView android:id="@+id/btn_skip" android:layout_width="wrap_content" android:text="@string/submit" android:textAlignment="viewEnd" style="@style/buttonStyle"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_skip_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_skip"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

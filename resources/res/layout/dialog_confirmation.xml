@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/dialog_confirmation_0" android:background="@drawable/shape_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/btn_color" android:gravity="center" android:id="@+id/tvMsg" android:tag="binding_1" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp"/>
+    <View android:background="@color/hint_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/btnNo" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" android:layout_weight="1"/>
+        <View android:background="#f0f0f0" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/btnYes" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

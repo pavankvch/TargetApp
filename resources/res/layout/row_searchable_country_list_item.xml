@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/row_searchable_country_list_item_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <TextView android:textColor="@color/black" android:id="@+id/text_country_name" android:tag="binding_1" android:padding="16dp" android:layout_width="wrap_content" android:textAlignment="viewStart" style="@style/TextStyle"/>
+        <TextView android:textColor="@color/black" android:id="@+id/text_country_code" android:tag="binding_2" android:padding="16dp" android:layout_width="wrap_content" android:layout_alignParentEnd="true" style="@style/TextStyle"/>
+    </RelativeLayout>
+    <View android:background="@color/hint_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

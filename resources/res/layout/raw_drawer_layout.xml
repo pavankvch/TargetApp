@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/raw_drawer_layout_0" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="36dp" android:layout_marginEnd="4dp">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/color_blue" android:id="@+id/txt_drawer_text" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true"/>
+    <LinearLayout android:id="@+id/linLang" android:tag="binding_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+        <include android:id="@+id/layout_lang" layout="@layout/layout_lang"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linShipment" android:tag="binding_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_drawer_text">
+        <include android:id="@+id/layout_shipment_history" layout="@layout/layout_shipment_history"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_right_arrow" android:visibility="gone" android:layout_width="20dp" android:layout_height="16dp" android:layout_marginTop="6dp" android:src="@drawable/right_arrow" android:tint="@color/color_blue" android:foregroundGravity="center" android:rotation="@integer/rotation" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

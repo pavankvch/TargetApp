@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_map_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.google.android.gms.location.places.ui.SupportPlaceAutocompleteFragment" android:id="@+id/place_autocomplete_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_confirm_address">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/img_marker" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_marker" android:layout_marginEnd="16dp"/>
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/img_current_location" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_navigator" android:layout_marginEnd="16dp"/>
+    </FrameLayout>
+    <TextView android:id="@+id/btn_confirm_address" android:background="@color/colorRed" android:text="@string/confirm_address" style="@style/buttonStyle"/>
+</RelativeLayout>

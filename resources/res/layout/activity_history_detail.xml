@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_history_detail_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/lin_buttons" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_8sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View style="@style/topViewStyle"/>
+            <TextView android:background="@color/address_shape_stroke_color" android:text="@string/pickupAddress" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+            <TextView android:id="@+id/txt_address" android:tag="binding_1" android:paddingTop="@dimen/_12sdp" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_12sdp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp">
+                <TextView android:id="@+id/txt_phone_label" android:tag="binding_2" android:layout_width="wrap_content" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/txt_colon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" : "/>
+                <TextView android:id="@+id/txt_phone_no" android:tag="binding_3" android:layout_width="wrap_content" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lin_delivery" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:background="@color/address_shape_stroke_color" android:text="@string/deliveryAddress" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:paddingTop="@dimen/_12sdp" android:text="@string/full_name" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/txt_full_name" android:tag="binding_4" android:paddingTop="0dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <View android:layout_marginStart="@dimen/_20sdp" android:layout_marginEnd="@dimen/_20sdp" style="@style/edtViewStyle"/>
+                <TextView android:text="@string/phone" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/txt_phone" android:tag="binding_5" android:paddingTop="0dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <View android:layout_marginStart="@dimen/_20sdp" android:layout_marginEnd="@dimen/_20sdp" style="@style/edtViewStyle"/>
+                <TextView android:id="@+id/txt_country_label" android:text="@string/country" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/txt_country" android:tag="binding_6" android:paddingTop="0dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <View android:layout_marginStart="@dimen/_20sdp" android:layout_marginEnd="@dimen/_20sdp" style="@style/edtViewStyle"/>
+                <TextView android:id="@+id/txt_city_label" android:text="@string/city" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/txt_city" android:tag="binding_7" android:paddingTop="0dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <View android:layout_marginStart="@dimen/_20sdp" android:layout_marginEnd="@dimen/_20sdp" style="@style/edtViewStyle"/>
+                <TextView android:visibility="gone" android:text="@string/address" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/txt_address1" android:tag="binding_8" android:paddingTop="0dp" android:visibility="gone" android:maxLines="6" android:singleLine="false" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <View android:visibility="gone" android:layout_marginStart="@dimen/_20sdp" android:layout_marginEnd="@dimen/_20sdp" style="@style/edtViewStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rel_delivery" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_delivery_address" android:background="@color/address_shape_stroke_color" android:text="@string/deliveryAddress" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:id="@+id/txt_del_full_name_label" android:paddingTop="@dimen/_12sdp" android:layout_width="wrap_content" android:text="@string/full_Name" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_4sdp" style="@style/TextStyleBlack"/>
+                    <TextView android:gravity="center_vertical" android:id="@+id/txt_del_full_name" android:tag="binding_9" android:layout_height="match_parent" style="@style/addressTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:id="@+id/txt_del_phone_label" android:paddingTop="@dimen/_12sdp" android:layout_width="wrap_content" android:text="@string/Phone" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_4sdp" style="@style/TextStyleBlack"/>
+                    <TextView android:id="@+id/txt_del_phone" android:tag="binding_10" style="@style/addressTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:id="@+id/txt_del_area_label" android:paddingTop="@dimen/_12sdp" android:layout_width="wrap_content" android:text="@string/Area" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_4sdp" style="@style/TextStyleBlack"/>
+                    <TextView android:id="@+id/txt_del_area" android:tag="binding_11" style="@style/addressTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:id="@+id/txt_del_address1_label" android:paddingTop="@dimen/_12sdp" android:layout_width="wrap_content" android:text="@string/Address1" android:paddingStart="@dimen/_20sdp" android:paddingEnd="@dimen/_4sdp" style="@style/TextStyleBlack"/>
+                    <TextView android:id="@+id/txt_del_address1" android:tag="binding_12" android:paddingBottom="@dimen/_10sdp" android:singleLine="false" style="@style/addressTextStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/txt_parcel_info" android:background="@color/address_shape_stroke_color" android:layout_marginTop="@dimen/_20sdp" android:text="@string/parcelInfo" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/rec_parcel_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:overScrollMode="never" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp"/>
+            <TextView android:background="@color/address_shape_stroke_color" android:layout_marginTop="@dimen/_20sdp" android:text="@string/order_info" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_oreder_id" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_order_id_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/Order_id" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_order_id" android:tag="binding_13" android:paddingTop="0dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_order_date" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_order_date_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/order_date" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_order_date_time" android:paddingTop="0dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_date" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_date_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/date" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_date_time" android:paddingTop="0dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_total_cost" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_total_cost_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/total_cost" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_total_cost" android:tag="binding_14" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_status" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_status_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/status" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_status" android:tag="binding_15" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_weight" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_total_weight_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/total_weight" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_total_weight" android:tag="binding_16" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lin_vehicle_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_vehicle_type_label" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/vehicle_type" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_vehicle_type" android:tag="binding_17" android:lineSpacingExtra="2dp" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_20sdp" style="@style/addressTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lin_shipment_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:background="@color/address_shape_stroke_color" android:layout_marginTop="@dimen/_20sdp" android:text="@string/shipment_info" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                <TextView android:id="@+id/txt_company_name" android:tag="binding_18" android:paddingTop="0dp" android:layout_width="wrap_content" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" app:fontPath="@string/bold_font" style="@style/TextStyleBlack"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lin_shipment_id" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txt_shipment_id_lable" android:paddingTop="0dp" android:layout_width="wrap_content" android:text="@string/shipment_id" android:paddingStart="@dimen/_20sdp" android:paddingEnd="0dp" style="@style/TextStyleBlack"/>
+                    <TextView android:id="@+id/txt_shipment_id" android:tag="binding_19" android:paddingTop="0dp" android:layout_width="wrap_content" android:paddingStart="@dimen/_4sdp" android:paddingEnd="@dimen/_12sdp" style="@style/addressTextStyle"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_copy_to_clipboard" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/ic_copy"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lin_buttons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center_horizontal" android:id="@+id/txt_delivery_in_progress" android:background="@color/colorRed" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="8dp" android:text="@string/track_driver" android:textAllCaps="false" style="@style/buttonStyle"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/txt_cancel_order" android:background="@color/colorRed" android:visibility="gone" android:layout_width="match_parent" android:layout_marginTop="8dp" android:text="@string/cancel_order" android:textAllCaps="false" style="@style/buttonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

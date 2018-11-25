@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/raw_parcel_info_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lin_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="12dp">
+        <TextView android:text="@string/parcel_type" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+        <TextView android:id="@+id/txt_parcel_type" android:tag="binding_1" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+        <View style="@style/edtViewStyle"/>
+        <TextView android:text="@string/quantity" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+        <TextView android:id="@+id/txt_quantity" android:tag="binding_2" android:textAllCaps="false" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+        <View style="@style/edtViewStyle"/>
+        <TextView android:text="@string/cost_value" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+        <TextView android:id="@+id/txt_cost_value" android:tag="binding_3" android:textAllCaps="false" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+        <View style="@style/edtViewStyle"/>
+        <TextView android:text="@string/weight_of_the_parcel" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+        <TextView android:id="@+id/txt_weight" android:tag="binding_4" android:textAllCaps="false" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+        <View style="@style/edtViewStyle"/>
+        <TextView android:id="@+id/text_description_label" android:text="@string/parcel_detail_description" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+        <TextView android:id="@+id/txt_parcel_description" android:tag="binding_5" android:textAllCaps="false" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+        <View android:id="@+id/view_description" style="@style/edtViewStyle"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/layout1" android:text="@string/length" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+                <TextView android:id="@+id/edtLength" android:tag="binding_6" android:layout_width="match_parent" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+                <View style="@style/edtViewStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/_8sdp">
+                <TextView android:text="@string/width" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+                <TextView android:tag="binding_7" android:layout_width="match_parent" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+                <View style="@style/edtViewStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/_8sdp">
+                <TextView android:text="@string/height" android:lineSpacingExtra="2dp" style="@style/addressTextStyle"/>
+                <TextView android:tag="binding_8" android:layout_width="match_parent" android:paddingStart="0dp" style="@style/TextStyleBlack"/>
+                <View style="@style/edtViewStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

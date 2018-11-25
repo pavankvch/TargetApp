@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/raw_address_book_0" android:background="@drawable/shape_rounded_rect_address" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+    <TextView android:id="@+id/txt_address" android:tag="binding_1" style="@style/addressTextStyle"/>
+    <TextView android:id="@+id/txt_phone_label" android:tag="binding_2" android:layout_width="wrap_content" android:layout_below="@+id/txt_address" style="@style/addressTextStyle"/>
+    <TextView android:id="@+id/txt_colon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" : " android:layout_below="@+id/txt_address" android:layout_toEndOf="@+id/txt_phone_label"/>
+    <TextView android:id="@+id/txt_phone_no" android:tag="binding_3" android:layout_width="wrap_content" android:layout_below="@+id/txt_address" android:layout_toEndOf="@+id/txt_colon" style="@style/addressTextStyle"/>
+    <RelativeLayout android:id="@+id/rel_edit" android:background="@drawable/shape_rounded_rect_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/txt_phone_no" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <ImageView android:id="@+id/img_edit" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_edit_address" android:layout_centerVertical="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/text_color" android:id="@+id/txt_edit" android:padding="4dp" android:layout_width="wrap_content" android:text="@string/edit" android:textAllCaps="true" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/img_edit" style="@style/TextStyle"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rel_delete" android:background="@drawable/shape_rounded_rect_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/txt_phone_no" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/rel_edit">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/text_color" android:id="@+id/txt_delete" android:padding="4dp" android:layout_width="wrap_content" android:text="@string/delete" android:textAllCaps="true" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/img_delete" style="@style/TextStyle"/>
+        <ImageView android:id="@+id/img_delete" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_delete_address" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

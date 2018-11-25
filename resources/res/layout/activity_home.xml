@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/activity_home_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view" style="@style/topViewStyle"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/txt_delivery_in_progress" android:background="@color/colorRed" android:visibility="gone" android:layout_width="match_parent" android:text="@string/track_driver" android:textAllCaps="false" style="@style/buttonStyle"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+        <FrameLayout android:id="@+id/frame_export" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/export_bg_img" android:scaleType="fitXY"/>
+            <ImageView android:layout_gravity="start" android:layout_width="180dp" android:layout_height="match_parent" android:src="@drawable/import_overlay" android:scaleType="fitXY" android:tint="@color/colorPrimaryDark"/>
+            <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="16dp" android:src="@drawable/export_logo_icon"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="16dp" android:src="@drawable/export_icon_green"/>
+            <TextView android:textSize="20sp" android:textColor="#56f2ca" android:layout_gravity="bottom" android:layout_margin="12dp" android:text="@string/export_space" android:textAllCaps="true" style="@style/TextStyle"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frame_import" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_weight="1">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/import_bg_img" android:scaleType="fitXY"/>
+            <ImageView android:layout_gravity="start" android:layout_width="180dp" android:layout_height="match_parent" android:src="@drawable/import_overlay" android:scaleType="fitXY" android:tint="#56f2ca"/>
+            <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="16dp" android:src="@drawable/import_delivey_logo_icon"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="16dp" android:src="@drawable/import_icon_blue"/>
+            <TextView android:textSize="20sp" android:textColor="@color/colorPrimaryDark" android:layout_gravity="bottom" android:layout_margin="12dp" android:text="@string/import_space" android:textAllCaps="true" style="@style/TextStyle"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frame_delivery" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_weight="1">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/delivery_img" android:scaleType="fitXY"/>
+            <ImageView android:layout_gravity="start" android:layout_width="180dp" android:layout_height="match_parent" android:src="@drawable/delivery_overlay" android:scaleType="fitXY" android:tint="#e7f0f7"/>
+            <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="16dp" android:src="@drawable/import_delivey_logo_icon"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="64dp" android:layout_height="64dp" android:layout_margin="16dp" android:src="@drawable/delivery_icon_blue"/>
+            <TextView android:textSize="20sp" android:textColor="@color/colorPrimaryDark" android:layout_gravity="bottom" android:layout_margin="12dp" android:text="@string/delivery_space" android:textAllCaps="true" style="@style/TextStyle"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

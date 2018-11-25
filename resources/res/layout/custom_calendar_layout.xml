@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lin_month_days" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/titleLayout" layout="@layout/custom_calendar_title_layout"/>
+        <include android:id="@+id/weekLayout" layout="@layout/custom_calendar_weeks_layout"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/daysContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/week1Layout" layout="@layout/roboto_calendar_week_1"/>
+        <include android:id="@+id/week2Layout" layout="@layout/roboto_calendar_week_2"/>
+        <include android:id="@+id/week3Layout" layout="@layout/roboto_calendar_week_3"/>
+        <include android:id="@+id/week4Layout" layout="@layout/roboto_calendar_week_4"/>
+        <include android:id="@+id/week5Layout" layout="@layout/roboto_calendar_week_5"/>
+        <include android:id="@+id/week6Layout" layout="@layout/roboto_calendar_week_6"/>
+    </LinearLayout>
+</LinearLayout>

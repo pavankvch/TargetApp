@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/layout_import_steps_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/step_bg_color" app:cardElevation="4dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+            <View android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_marginStart="42dp" android:layout_marginEnd="42dp"/>
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_step1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/txt_step1" android:background="@drawable/ic_round_shape_blue" android:text="1" style="@style/stepNoTextStyle"/>
+                    <TextView android:text="@string/pickup_address" style="@style/stepLabelTextStyle"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_step2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+                    <TextView android:id="@+id/txt_step2" android:background="@drawable/ic_round_shape_blue" android:text="2" style="@style/stepNoTextStyle"/>
+                    <TextView android:text="@string/parcel_info" style="@style/stepLabelTextStyle"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

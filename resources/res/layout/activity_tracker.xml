@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_tracker_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/frm_map" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_heightPercent="65%">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/frm_map" app:layout_heightPercent="35%">
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textColor="@color/black" android:gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/your_order_is_out_for_delivery"/>
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@+id/tvViewOrder" android:background="@drawable/splash_white_curve_button" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@string/view_order" android:textAllCaps="true"/>
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textColor="@color/white" android:gravity="center" android:id="@+id/tvCallCenter" android:background="@drawable/splash_fill_curve_button" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@string/call_center" android:textAllCaps="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/imgClose" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="8dp" android:src="@drawable/map_close" android:tint="@color/colorPrimaryDark"/>
+    <FrameLayout android:background="@drawable/circle_white" android:padding="4dp" android:layout_width="80dp" android:layout_height="80dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="30%">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/mProg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/circular_progress_color" style="?android:attr/progressBarStyle"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_eta" android:background="@drawable/circle_with_stock_blue" android:padding="6dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/tvETA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5"/>
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/tvMins" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/min" android:textAllCaps="true"/>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.percent.PercentRelativeLayout>

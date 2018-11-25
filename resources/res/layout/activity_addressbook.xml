@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_addressbook_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/view" style="@style/topViewStyle"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rec_address_list" android:layout_margin="12dp" android:layout_above="@+id/btn_add_address" android:layout_below="@+id/view" style="@style/recyclerViewStyle"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_no_address" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_add_address">
+        <ImageView android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/ic_no_address"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/colorRed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/no_address_found" android:textAlignment="center"/>
+    </LinearLayout>
+    <TextView android:id="@+id/btn_add_address" android:background="@color/colorRed" android:layout_width="match_parent" android:text="@string/add_address" style="@style/buttonStyle"/>
+</RelativeLayout>

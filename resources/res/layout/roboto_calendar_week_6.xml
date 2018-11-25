@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="weekRow6" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="7">
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer36" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText36" android:text="36" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer37" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText37" android:text="37" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer38" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText38" android:text="38" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer39" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText39" android:text="39" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer40" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText40" android:text="40" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer41" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText41" android:text="41" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer42" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <com.stacktips.view.DayView android:tag="dayOfMonthText42" android:text="42" style="@style/CalendarView.DayOfTheMonth"/>
+    </RelativeLayout>
+</LinearLayout>

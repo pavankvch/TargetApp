@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_no_internet_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View style="@style/topViewStyle"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_try_again" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/imgLogo" android:layout_width="140dp" android:layout_height="140dp" android:src="@drawable/ic_no_internet" android:rotation="@integer/rotation"/>
+        <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/connection_lost" android:textAllCaps="true" app:fontPath="@string/bold_font"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/black" android:gravity="center" android:id="@+id/textView3" android:padding="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_internet_available"/>
+    </LinearLayout>
+    <TextView android:gravity="center_horizontal" android:id="@+id/btn_try_again" android:background="@color/colorRed" android:layout_width="match_parent" android:text="@string/try_again" android:layout_alignParentEnd="true" style="@style/buttonStyle"/>
+</RelativeLayout>

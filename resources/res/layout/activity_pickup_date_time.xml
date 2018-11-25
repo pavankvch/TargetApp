@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_pickup_date_time_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/view" style="@style/topViewStyle"/>
+    <LinearLayout android:id="@+id/lin_steps" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view">
+        <include android:id="@+id/layout_steps" layout="@layout/layout_export_steps"/>
+    </LinearLayout>
+    <ScrollView android:scrollbarThumbVertical="@android:color/transparent" android:id="@+id/scroll_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12dp" android:layout_above="@+id/lin_skip_back" android:layout_below="@+id/lin_steps">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.stacktips.view.CustomCalendarView android:id="@+id/calendarView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:calendarBackgroundColor="@color/white" app:calendarTitleTextColor="@color/colorRed" app:currentDayOfMonthColor="@color/color_disableDay" app:dayOfMonthTextColor="@color/black" app:dayOfWeekTextColor="@color/black" app:disabledDayBackgroundColor="@color/white" app:disabledDayTextColor="@color/color_disableDay" app:selectedDayBackgroundColor="@color/colorRed" app:selectedDayTextColor="@color/white" app:titleLayoutBackgroundColor="@android:color/transparent" app:weekLayoutBackgroundColor="@android:color/transparent"/>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/colorRed" android:gravity="center" android:id="@+id/txt_pickup_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:text="@string/pickup_time" android:layout_below="@+id/calendarView" android:textAllCaps="true"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/lin_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_below="@+id/txt_pickup_time">
+                <EditText android:id="@+id/edt_hours" android:padding="4dp" android:layout_width="@dimen/_40sdp" android:hint="@string/hint" android:singleLine="true" android:maxLength="2" android:imeOptions="actionNext" app:hintTextAppearance="@style/TextAppearance.AppCompat" style="@style/timeEditTextStyle"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+                <EditText android:id="@+id/edt_mins" android:padding="4dp" android:layout_width="@dimen/_40sdp" android:singleLine="true" android:imeOptions="actionDone" app:hintTextAppearance="@style/TextAppearance.AppCompat" style="@style/timeEditTextStyle"/>
+                <TextView android:textColor="@color/text_color" android:id="@+id/txt_AM" android:text="@string/AM" android:layout_marginStart="8dp" style="@style/timeEditTextStyle"/>
+                <TextView android:textColor="@color/white" android:id="@+id/txt_PM" android:background="@color/colorRed" android:text="@string/PM" style="@style/timeEditTextStyle"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rel_time_slot" android:background="@drawable/shape_time_slot" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_180sdp" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_below="@+id/txt_pickup_time" android:layout_centerHorizontal="true">
+                <TextView android:id="@+id/txt_time_slot" android:textAlignment="center" style="@style/addressTextStyle"/>
+                <ImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_drop_down_arrow" android:tint="@color/black" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rel_time_slot" android:layout_centerHorizontal="true">
+                <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@+id/txt_note" android:layout_width="wrap_content" android:layout_marginTop="24dp" android:text="@string/pickup_time_is_adjustable" android:layout_marginStart="@dimen/_12sdp" style="@style/addressTextStyle"/>
+                <ImageView android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_8sdp" android:src="@drawable/ic_star" android:layout_marginStart="@dimen/_2sdp" android:layout_toEndOf="@+id/txt_note"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/lin_skip_back" android:background="@color/colorRed" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_alignParentBottom="true" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <LinearLayout android:id="@+id/lin_back" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/white" app:srcCompat="@drawable/ic_back"/>
+            <TextView android:id="@+id/btn_back" android:layout_width="wrap_content" android:text="@string/back" android:textAlignment="viewStart" style="@style/buttonStyle"/>
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_margin="12dp"/>
+        <LinearLayout android:gravity="end" android:id="@+id/lin_skip" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <TextView android:id="@+id/btn_skip" android:layout_width="wrap_content" android:text="@string/next" android:textAlignment="viewEnd" style="@style/buttonStyle"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/img_skip_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_skip"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
